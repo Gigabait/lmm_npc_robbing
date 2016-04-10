@@ -308,10 +308,9 @@ function LMMNPCRStartRobbing( ply, self )
 	
 	self.damage = 100
 	
---	local randomsa = math.random(1,10)
-	local randomsa = 1
+	local randomsa = math.random(1,10)
 	
-	if randomsa == 1 then
+	if randomsa == 5 then
 		self:SetNWFloat("LMMNPCRRobbingInProgress", 1)
 		self:SetNWEntity("LMMNPCRPlayerRobbing", ply)
 		self:EmitSound(LMMNPCRConfig.SoundOfAlarm)

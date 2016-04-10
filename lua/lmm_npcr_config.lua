@@ -1,6 +1,7 @@
 LMMNPCRConfig = {}
 LMMNPCRConfig.DevMode = false -- Do not touch this.. its not a playable version.. (its for testing LEAVE TO FALSE)
 /*
+	Made By: XxLMM13xXgaming
 */
 LMMNPCRConfig.JobsThatCanRob = { -- Jobs that can rob
 	"Gangster"
