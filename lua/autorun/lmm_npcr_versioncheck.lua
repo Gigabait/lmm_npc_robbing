@@ -6,7 +6,7 @@ local update_ur = "https://gist.githubusercontent.com/XxLMM13xXgaming/ac0b3dfea9
 local msg_outdated = "You are using a outdated/un-supported version. You are on version "..version.."! Please download the new version here: " .. update_url -- DO NOT EDIT THIS!
 local ranksthatgetnotify = { "superadmin", "owner", "admin" } -- DO NOT EDIT THIS!
 local addon_id = "LMMNPCR" -- DO NOT EDIT THIS
-local addon_name = "NPC Store Robbary" -- DO NOT EDIT THIS
+local addon_name = "NPC Store Robbery" -- DO NOT EDIT THIS
 
 if (SERVER) then
 
