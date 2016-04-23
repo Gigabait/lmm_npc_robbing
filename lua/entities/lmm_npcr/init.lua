@@ -195,12 +195,13 @@ net.Receive("LMMNPCRCreateNPC", function(len, ply)
 		local color = net.ReadTable()
 		local pos = npc:GetPos()
 		local ang = npc:GetAngles()
+		local nick = string.gsub( ply:Nick(), "|", "Unknown admin(used bad name)" )
 		
 		if model == "default" then
 			model = "models/humans/group02/male_01.mdl"
 		end
 		
-		file.Write("lmmnpcr_data/"..id..".txt", name.."|"..id.."|"..model.."|"..color.r.."|"..color.g.."|"..color.b.."|"..color.a.."|"..pos.x.."|"..pos.y.."|"..pos.z.."|"..ang.x.."|"..ang.y.."|"..ang.z.."|"..ply:Nick().."("..ply:SteamID()..")")
+		file.Write("lmmnpcr_data/"..id..".txt", name.."|"..id.."|"..model.."|"..color.r.."|"..color.g.."|"..color.b.."|"..color.a.."|"..pos.x.."|"..pos.y.."|"..pos.z.."|"..ang.x.."|"..ang.y.."|"..ang.z.."|"..nick.."("..ply:SteamID()..")")
 		npc:Remove()
 		timer.Simple(1, function()
 			if file.Exists("lmmnpcr_data/"..id..".txt", "DATA") then

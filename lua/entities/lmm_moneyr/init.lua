@@ -25,8 +25,9 @@ net.Receive("LMMNPCRCreateNPCMoney", function(len, ply)
 		local min = net.ReadString()
 		local pos = npc:GetPos()
 		local ang = npc:GetAngles()
+		local nick = string.gsub( ply:Nick(), "|", "Unknown admin(used bad name)" )
 		
-		file.Write("lmmnpcr_data/"..id.."_money.txt", id.."|"..pos.x.."|"..pos.y.."|"..pos.z.."|"..ang.x.."|"..ang.y.."|"..ang.z.."|"..min.."|"..max.."|"..ply:Nick().."("..ply:SteamID()..")")
+		file.Write("lmmnpcr_data/"..id.."_money.txt", id.."|"..pos.x.."|"..pos.y.."|"..pos.z.."|"..ang.x.."|"..ang.y.."|"..ang.z.."|"..min.."|"..max.."|"..nick.."("..ply:SteamID()..")")
 		npc:Remove()
 		timer.Simple(1, function()
 			if file.Exists("lmmnpcr_data/"..id..".txt", "DATA") then
