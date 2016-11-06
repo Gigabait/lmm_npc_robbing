@@ -1,5 +1,5 @@
 --[[You really should not edit this!]]--
-local version = "1.1" -- DO NOT EDIT THIS!
+local version = "1.2" -- DO NOT EDIT THIS!
 local version_url = "https://gist.githubusercontent.com/XxLMM13xXgaming/4c2f85d824d56d7195289c6f15eb3d93/raw/LMMNPCR" -- DO NOT EDIT THIS!
 local update_url = "https://github.com/XxLMM13xXgaming/lmm_npc_robbing/" -- DO NOT EDIT THIS!
 local update_ur = "https://gist.githubusercontent.com/XxLMM13xXgaming/ac0b3dfea9a84471c50c46abce1f26a7/raw/LMMNPCR%2520UR" -- DO NOT EDIT THIS!
